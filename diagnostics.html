@@ -7,68 +7,71 @@
 <body>
 <header>
     <nav>
-        <a href="diagnostics.html">Диагностика Online</a> |
         <a href="home_page.html">Главная страница</a> |
+        <a href="cabinet.html">Личный кабинет</a> |
+        <a href="diagnostics.html">Диагностика Online</a> |
+        <a href="guarantee.html">Гарантия</a> |
         <a href="contacts.html">Контакты</a> |
-
     </nav>
 </header>
 
 <main>
     <h1>Диагоностика ONLINE</h1>
-    <form action="#">
-        <ol>
-            <section>
-                <li><p>Ваши контактные данные</p></li>
-                <input type="text" placeholder="Иван Иванов" required>
-            </section>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div>
+                <label for="client_contact">Ваши контактные данные</label>
+                <input id="client_contact" type="text" placeholder="Иван Иванов" autofocus required>
+            </div>
 
-            <section>
-                <li><p>Номер для связи</p></li>
-                <input type="text" placeholder="+7 (999) 999-99-99" required>
-            </section>
+            <div>
+                <label for="number">Номер для связи</label>
+                <input id="number" type="tel" placeholder="+7 (999) 999-99-99" required>
+            </div>
 
-            <section>
-                <li><p>Телевизор включается?</p></li>
-                    <input id="yes" name="works" type="radio"  required><label for="yes">Да</label> <br>
-                    <input id="yan" name="works" type="radio"  required><label for="yan">Включается, но выкючается</label> <br>
-                    <input id="noo" name="works" type="radio"  required><label for="noo">Нет</label> <br>
-            </section>
+            <div>
+                <p>Телевизор включается?</p>
+                <input id="yes" name="works" type="radio"  value="Да" required><label for="yes">Да</label><br>
+                <input id="yan" name="works" type="radio"  value="Включается, но выключается"required><label for="yan">Включается, но выключается</label> <br>
+                <input id="noo" name="works" type="radio"  value="Нет" required><label for="noo">Нет</label> <br>
+            </div>
 
-            <section>
-                <li><p>Ваша модель телевизора:</p></li>
-                    <p><label for="dns"><input id="dns" name="models" type="radio" value="dns" required> DNS </label></p>
-                    <p><label for="lg"><input id="lg" name="models" type="radio" value="lg" required> Lg </label></p>
-                    <p><label for="mystery"><input id="mystery" name="models" type="radio" value="mystery" required> Mystery </label></p>
-                    <p><label for="philips"><input id="philips" name="models" type="radio" value="philips" required> Philips </label></p>
-                    <p><label for="rubin"><input id="rubin" name="models" type="radio" value="rubin" required> Rubin </label></p>
-                    <p><label for="samsung"><input id="samsung" name="models" type="radio" value="samsung" required> Samsung </label></p>
-                    <p><label for="sharp"><input id="sharp" name="models" type="radio" value="sharp" required> Sharp </label></p>
-                    <p><label for="sony"><input id="sony" name="models" type="radio" value="sony" required> Sony </label></p>
-                    <p><label for="supra"><input id="supra" name="models" type="radio" value="supra" required> Supra </label></p>
-                    <p><label for="toshiba"><input id="toshiba" name="models" type="radio" value="toshiba" required> Toshiba </label></p>
-                    <p><label for="other"><input id="other" name="models" type="radio" value="other" required> Другая модель </label></p>
-            </section>
+            <div>
+                <p>Ваша модель телевизора:</p>
+                <div><label for="dns"><input id="dns" name="models" type="radio" value="dns" required> DNS </label></div>
+                <div><label for="lg"><input id="lg" name="models" type="radio" value="lg" required> Lg </label></div>
+                <div><label for="mystery"><input id="mystery" name="models" type="radio" value="mystery" required> Mystery </label></div>
+                <div><label for="philips"><input id="philips" name="models" type="radio" value="philips" required> Philips </label></div>
+                <div><label for="rubin"><input id="rubin" name="models" type="radio" value="rubin" required> Rubin </label></div>
+                <div><label for="samsung"><input id="samsung" name="models" type="radio" value="samsung" required> Samsung </label></div>
+                <div><label for="sharp"><input id="sharp" name="models" type="radio" value="sharp" required> Sharp </label></div>
+                <div><label for="sony"><input id="sony" name="models" type="radio" value="sony" required> Sony </label></div>
+                <div><label for="supra"><input id="supra" name="models" type="radio" value="supra" required> Supra </label></div>
+                <div><label for="toshiba"><input id="toshiba" name="models" type="radio" value="toshiba" required> Toshiba </label></div>
+                <div><label for="other_1"><input id="other_1" name="models" type="radio" value="other" required> Другая модель </label></div>
+            </div>
 
-            <section>
-                <li><p>Выберите проблему</p></li>
-                <p><input id="notw" value="Не включается" name="problem" type="radio" required><label pro="notw">Не включается</label></p>
-                <p><input id="pic" value="Проблема с изображением" name="problem" type="radio" required><label pro="pic">Проблема с изображением</label></p>
-                <p><input id="wifi" value="Не подключается к wifi" name="problem" type="radio" required><label pro="wifi">Не подключается к wifi</label></p>
-                <p><input id="sui" value="Самопроизвольно отключается" name="problem" type="radio" required><label pro="sui">Самопроизвольно отключается</label></p>
-                <p><input id="ntv" value="Не видит цифровые каналы" name="problem" type="radio" required><label pro="ntv">Не видит цифровые каналы</label></p>
-                <p><input id="sounds" value="Проблема со звуком" name="problem" type="radio" required><label pro="sounds">Проблема со звуком</label></p>
-                <p><input id="matric" value="Разбился экран" name="problem" type="radio" required><label pro="matric">Разбился экран</label></p>
-                <p><input id="other2" value="Другое" name="problem" type="radio" required><label pro="Другое">Другое</label></p>
-            </section>
+            <div>
+                <p>Выберите проблему:</p>
+                <div><label for="no_turn"><input id="no_turn" value="Не включается" name="problem" type="radio" required>Не включается</label></div>
+                <div><label for="no_pic"><input id="no_pic" value="Проблема с изображением" name="problem" type="radio" required>Проблема с изображением</label></div>
+                <div><label for="no_wifi"><input id="no_wifi" value="Не подключается к wifi" name="problem" type="radio" required>Не подключается к wifi</label></div>
+                <div><label for="turns_off"><input id="turns_off" value="Самопроизвольно отключается" name="problem" type="radio" required>Самопроизвольно отключается</label></div>
+                <div><label for="no_channels"><input id="no_channels" value="Не видит цифровые каналы" name="problem" type="radio" required>Не видит цифровые каналы</label></div>
+                <div><label for="no_sounds"><input id="no_sounds" value="Проблема со звуком" name="problem" type="radio" required>Проблема со звуком</label></div>
+                <div><label for="no_matrix"><input id="no_matrix" value="Разбился экран" name="problem" type="radio" required>Разбился экран</label></div>
+                <div><label for="other_2"><input id="other_2" value="Другое" name="problem" type="radio" required>Другое</label></div><br>
+            </div>
 
-            <section>
-                <li> <p1> Дополнительные комментарии </p1></li>
-                <input type="text" placeholder="Опишите вашу проблему"> <br/>
-                <input type="file" multiple accept="image/* video/*">
-            </section>
-        </ol>
-        <input type="submit" value="Отправить анкету мастеру">
+            <div>
+                <label for="additional_comment">Дополнительные комментарии:</label><br>
+                <textarea id="additional_comment" placeholder="Опишите вашу проблему или прикрепите фото"></textarea><br>
+                <input name="[]" type="file" multiple accept="image/* video/*">
+            </div>
+            <div><br>
+                    <input type="submit" name="submit" value="Отправить анкету мастеру">
+            </div>
+        </fieldset>
      </form>
 </main>
 </body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+<header>
+      <nav>
+        <a href="home_page.html">Главная страница</a> |
+        <a href="cabinet.html">Личный кабинет</a> |
+        <a href="diagnostics.html">Диагностика Online</a> |
+        <a href="guarantee.html">Гарантия</a> |
+        <a href="contacts.html">Контакты</a> |
+    </nav>
+</header>
+    <main>
+        <h1>Личный кабинет</h1>
+        <form action="#" autocomplete="on" method="post"> <!-- каким способом данные будут отправлятся на сайт,
+        post - защищенный вид отправки -->
+            <div>
+                <label for="login">Email</label> <!-- label без формы не ильспользуем, текст для поля -->
+                <input id="login" type="email" placeholder="Логин" required maxlength="15" autofocus> <!-- value нельзя использовать как подсказку
+                value - пользовательский выбор, то есть пользователь может выбрать, а его выбо сохранится в value
+                пользователь что-либо ввёл, value используем сейчас с кнопками-->
+                <!-- чтобы формы выглядили одинаково нужно использовать валидацию -->
+                <!-- autofocus выделение первого поля изначально -->
+            </div>
+            <div>
+                <label for="pass">Пароль:</label>
+                <input id="pass" type="password" minlength="3" placeholder="Пароль" required> <!-- можем дублировать названия password -->
+                <!-- привязка label for испоьзуется для интерактивности -->
+                <!-- maxlength - для текстовых полей, minlength - для текстовых полей -->
+            </div>
+            <div>
+                <label for="remember_me">Запомнить меня:
+                    <!-- checked - чекбокс выделен по умолчанию-->
+                    <input id="remember_me" type="checkbox" checked>
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Войти">
+                <!-- submit - отправка на сервер
+                button - просто кнопка
+                reset - очистка полей формы
+                -->
+            </div>
+        </form>
+        <div>
+                <a href="first_time.html">Забыли пароль или логин?</a>
+        </div>
+        <div>
+                <a href="first_time.html">Впервые на сайте?</a>
+        </div>
+        <div>
+            <p>*Личный кабинет позволяет отслеживать этапы ремонта, дату ремонта для использования <a href="guarantee.html">гарантии</a></p>
+        </div>
+    </main>
+</body>
+</html>
+
+<!-- сервер name: value-->

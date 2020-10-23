@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="home_page.html">Главная страница</a> |
+        <a href="cabinet.html">Личный кабинет</a> |
+        <a href="diagnostics.html">Диагностика Online</a> |
+        <a href="guarantee.html">Гарантия</a> |
+        <a href="contacts.html">Контакты</a> |
+    </nav>
+</header>
+<main>
+    <h1>Регистрация на сайте</h1>
+    <form id="submit_1" action="#" method="post" enctype="text/plain">
+        <div>
+            <label for="name_reg"> Ваше имя:
+                <input id="name_reg" type="text" placeholder="Иван" required autofocus minlength="3" maxlength="10">
+            </label>
+        </div>
+        <div>
+            <label for="surname_reg"> Фамилия:
+                <input id="surname_reg" type="text" placeholder="Иванов" required autofocus minlength="3" maxlength="10">
+            </label>
+        </div>
+        <div>
+            <label for="tel_reg"> Номер телефона:
+                <input id="tel_reg" type="text" placeholder="+7 (999) 999-99-99">
+            </label>
+        </div>
+        <div>
+            <label for="email_reg"> Email (электронная почта):
+                <input id="email_reg" type="text" required autofocus minlength="3" maxlength="15">
+            </label>
+        </div>
+        <div>
+            <label for="area"> Район:
+                <select id="area">
+                    <option value="Боровск">Боровск</option>
+                    <option value="Соликамск">Соликамск</option>
+                    <option value="Клестовка">Клестовка</option>
+                    <option value="Красное">Красное</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <button type="submit" name="Регистрация!" value="yes">Зарегистрироваться</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>

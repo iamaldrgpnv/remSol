@@ -1,0 +1,92 @@
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    background-color: red;
+    padding: 50px;
+    z-index: 10; /*Благодаря этому свойству хедер будет накладываться на изображения, но снекоторыми элементами работать он не будет*/
+}
+.main-margin{
+    margin-top: 120px;
+}
+
+main {
+    margin: 0;
+}
+
+
+.bg-orange-1 {
+    background: black;
+    font-color: red;
+}
+p {
+    font-color: red;
+    font-size: 30px;
+}
+.square {
+
+}
+body {
+    margin: 0;
+}
+.up-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 10px;
+    font-size: 35px;
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+    border-radius: 50%;
+}
+.button {
+    padding: 10px;
+    /*margin: 10px;*/
+    background-color: red;
+}
+
+.item {
+    position: relative;
+}
+
+.item q {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.item div{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: ;
+    display: none;
+}
+.item a{
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*тени*/
+box-shadow: /*вначале задаем смещение по ширине, куда он будет смещаться влево или вправо, смещение по высоте,
+радиус размытия, растяжение тени, цвет тени, если мы не задаем цвет, тень будет черной*/
+text-shadow: ; /*тень для букв*/
+
+.shadow-block {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-btn {
+    0 0 10px rgba(0, 0, 0, 0.5);
+}
+.text-shadow {
+    text-shadow: 5px 5px 10px #3E2723;
+}

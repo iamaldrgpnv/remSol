@@ -1,15 +1,38 @@
-body,
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+body {
+    margin: 0;
+    margin-top: 35px;
+}
+
 footer {
     margin: 0;
+    border: 3px solid black;
+    display: none;
 }
-h1 {
+.h1 {
     font-size: 50px;
+    margin: 0px;
+    /*border: 3px solid black;*/
 }
+
+
 ul{
-    list-style-type: square;
+    list-style-type: none;
     background-color: #ecfcff;
-    margin: 0;
-    padding: 0;
+    border: 3px solid black;
+    border-radius: 10%;
+    box-shadow:
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    height: auto;
 }
 li {
     font-size: 25px;
@@ -52,8 +75,17 @@ a:hover{
 img {
     width: 50%;
     height: auto;
-/*a:active{
-}*/
-/*a:visited{
-    color: black;
-}*/
+    /*border: 3px solid black;*/
+}
+
+
+#client_contact, #number {
+    padding: 0 0 0 16px;
+}
+
+.up {
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    position: fixed;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}

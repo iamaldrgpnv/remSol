@@ -1,0 +1,54 @@
+body {
+    background-color:rgba(0, 120, 201, 0.7);
+}
+.border {
+  position: relative;
+  margin: 100px auto;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  background-color: silver;
+  box-shadow: 5px 5px 5px black;
+}
+.sign {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 75px;
+  /* border: 5px solid black; */
+}
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid black; */
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 120, 201, 0.7);
+  display: none;
+}
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  border: 1px solid black;
+  padding-left: 15px;
+}
+
+#email {
+  margin-top: 75px;
+}
+
+
+button{
+    margin-left: 139px;
+}
+div.border:hover div.login {
+  display: block;
+}
+ div.border:hover div.sign {
+  display: block;
+} 
